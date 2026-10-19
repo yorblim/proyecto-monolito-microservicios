@@ -69,6 +69,8 @@ services:
     ports:
       - "3003:3003"
     environment:
+      USUARIOS_URL: http://usuarios:3001
+      PRODUCTOS_URL: http://productos:3002
       PORT: 3003
       DB_HOST: pedidos-db
       DB_PORT: 5432
